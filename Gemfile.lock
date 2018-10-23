@@ -46,6 +46,9 @@ GEM
       aws-partitions (~> 1.0)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
+    aws-sdk-sqs (1.8.0)
+      aws-sdk-core (~> 3, >= 3.26.0)
+      aws-sigv4 (~> 1.0)
     aws-sigv4 (1.0.3)
     builder (3.2.3)
     concurrent-ruby (1.0.5)
@@ -121,6 +124,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-sdk-sqs
   puma
   rails
   shoryuken
