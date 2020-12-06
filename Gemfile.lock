@@ -52,6 +52,7 @@ GEM
       activesupport (>= 4.2.0)
     i18n (1.8.3)
       concurrent-ruby (~> 1.0)
+    kgio (2.11.3)
     loofah (2.6.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -97,6 +98,7 @@ GEM
       method_source
       rake (>= 0.8.7)
       thor (>= 0.19.0, < 2.0)
+    raindrops (0.19.1)
     rake (13.0.1)
     redis (4.1.4)
     sidekiq (5.2.9)
@@ -118,6 +120,9 @@ GEM
       thread_safe (~> 0.1)
     tzinfo-data (1.2020.1)
       tzinfo (>= 1.0.0)
+    unicorn (5.7.0)
+      kgio (~> 2.6)
+      raindrops (~> 0.7)
     websocket-driver (0.7.2)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -132,6 +137,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3
   tzinfo-data
+  unicorn
 
 BUNDLED WITH
    1.17.3
